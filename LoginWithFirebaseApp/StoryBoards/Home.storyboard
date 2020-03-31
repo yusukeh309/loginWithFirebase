@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Home View Controller-->
+        <scene sceneID="SnR-xc-YQk">
+            <objects>
+                <viewController storyboardIdentifier="HomeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="oRM-cd-zMM" customClass="HomeViewController" customModule="LoginWithFirebaseApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4dK-R8-sq2">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Welcome" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B4d-wy-Fdm">
+                                <rect key="frame" x="88" y="184" width="238" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="60"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="さんようこそ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgX-lj-9ky">
+                                <rect key="frame" x="146" y="356" width="122.5" height="24"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="test@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0wv-Xh-skq">
+                                <rect key="frame" x="145.5" y="400" width="123" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="作成日：" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="axh-D8-GQR">
+                                <rect key="frame" x="172.5" y="441" width="69.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="czp-ZA-enA">
+                                <rect key="frame" x="107" y="532" width="200" height="50"/>
+                                <color key="backgroundColor" red="1" green="0.55321596750000002" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="hAn-MJ-G82"/>
+                                    <constraint firstAttribute="height" constant="50" id="sR3-tQ-4gO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                <state key="normal" title="Logout">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="tappedLogoutButton:" destination="oRM-cd-zMM" eventType="touchUpInside" id="0ww-ef-EYT"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="axh-D8-GQR" firstAttribute="centerX" secondItem="4dK-R8-sq2" secondAttribute="centerX" id="CS6-kB-snG"/>
+                            <constraint firstItem="KgX-lj-9ky" firstAttribute="centerX" secondItem="4dK-R8-sq2" secondAttribute="centerX" id="CsC-H3-eBf"/>
+                            <constraint firstItem="B4d-wy-Fdm" firstAttribute="top" secondItem="fbx-cs-mtC" secondAttribute="top" constant="140" id="KNq-np-Z28"/>
+                            <constraint firstItem="KgX-lj-9ky" firstAttribute="top" secondItem="B4d-wy-Fdm" secondAttribute="bottom" constant="100" id="V0t-6f-d3n"/>
+                            <constraint firstItem="0wv-Xh-skq" firstAttribute="top" secondItem="KgX-lj-9ky" secondAttribute="bottom" constant="20" id="XPw-Hb-lus"/>
+                            <constraint firstItem="0wv-Xh-skq" firstAttribute="centerX" secondItem="4dK-R8-sq2" secondAttribute="centerX" id="hBb-MA-zCX"/>
+                            <constraint firstItem="B4d-wy-Fdm" firstAttribute="centerX" secondItem="4dK-R8-sq2" secondAttribute="centerX" id="lJA-5L-5uD"/>
+                            <constraint firstItem="axh-D8-GQR" firstAttribute="top" secondItem="0wv-Xh-skq" secondAttribute="bottom" constant="20" id="lqV-L4-Jvt"/>
+                            <constraint firstItem="czp-ZA-enA" firstAttribute="top" secondItem="axh-D8-GQR" secondAttribute="bottom" constant="70" id="sOz-No-hVu"/>
+                            <constraint firstItem="czp-ZA-enA" firstAttribute="centerX" secondItem="4dK-R8-sq2" secondAttribute="centerX" id="x4w-Sh-BEL"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fbx-cs-mtC"/>
+                    </view>
+                    <connections>
+                        <outlet property="dateLabel" destination="axh-D8-GQR" id="cOP-dj-2Xe"/>
+                        <outlet property="emailLabel" destination="0wv-Xh-skq" id="JcX-PO-Pfr"/>
+                        <outlet property="logoutButton" destination="czp-ZA-enA" id="POh-ga-I5D"/>
+                        <outlet property="nameLabel" destination="KgX-lj-9ky" id="bTR-QQ-Fy0"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d4f-B0-pFp" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="378" y="110"/>
+        </scene>
+    </scenes>
+</document>
